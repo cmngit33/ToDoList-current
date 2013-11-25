@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--To Do List...
+    Author: Constance Neuber
+    Date: September 17, 2013
+
+    Filename: todo.html
+    Supporting Files: done.css
+
+		Example: http://todomvc.com/vanilla-examples/vanillajs/
+    -->
+    <meta charset="UTF-8"/>
+ 
+    <title>To Do List</title>
+    
+   <link rel="stylesheet" type="text/css" href="done.css">
+	  <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+
+  	<script src="donejs.js"></script>  
+    
+</head>
+
+	<body>
+        <h1>todos</h1>    
+    <div id="thecontainer">
+    	<div class="todocontainer">
+				<div class="allcheckbox">&#8659;</div>
+        <input type="text" class="todo" name="typedtext"  maxlength="50" placeholder="What needs to be done?">			
+			</div>	
+			<div class="todo-list">		
+				
+			</div>
+
+		<div id="thefooter">
+    	<ul>
+    		<li class="remaining"><b>0</b> items left</li>
+    		<li><a href="#" class="show-all"><b>All</b></a></li>  
+    		<li><a href="#" class="show-active">Active</a></li>  
+    		<li><a href="#" class="show-complete">Completed</a></li>
+    		</ul>
+    	<button id="clearcompleted"><b>Clear Completed</b></button>
+			
+    </div>
+	</div>
+        <p>Double-Click To Edit A Todo</p> 
+		
+<div class="templates hide">
+			Templates!	
+	<div class="todo-item wide">
+			<span class="toggle">&#8730;</span>
+			<label>The things to do</label>
+			<input type="text">
+		<span class="glyphicon glyphicon-star-empty pull-right delete-item" ></span>
+	</div>
+</div>
+		
+    <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+  <script src="./bootstrap/js/bootstrap.js"></script> 
+
+	<!---Calling the 'app.init' function: This sets up the Callbacks---> 
+    <script>
+      $(function() {
+       app.init();
+      });
+    </script>
+  </body>
+</html>
